@@ -22,7 +22,7 @@ module.exports = {
     runtimeChunk: 'single',
   },
   experiments: {
-    topLevelAwait: true
+    topLevelAwait: true,
   },
   module: {
     rules: [
