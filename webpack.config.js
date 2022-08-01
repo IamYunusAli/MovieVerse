@@ -15,7 +15,7 @@ module.exports = {
     static: './dist',
   },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   optimization: {
