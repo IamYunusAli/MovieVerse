@@ -1,6 +1,8 @@
 const listContainer = document.querySelector('.movielist');
 
+let data = [];
 const displayData = (results) => {
+  data = results;
   results.forEach((result) => {
     listContainer.innerHTML += `
     <li class="movieitem">
@@ -22,3 +24,4 @@ const displayData = (results) => {
 };
 
 export default displayData;
+export { data };
