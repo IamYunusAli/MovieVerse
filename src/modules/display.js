@@ -1,6 +1,7 @@
 const listContainer = document.querySelector('.movielist');
 const data = [0];
 const displayData = (results) => {
+  
   data[0] = results;
   results.forEach((result) => {
     listContainer.innerHTML += `
