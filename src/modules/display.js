@@ -1,5 +1,5 @@
 const listContainer = document.querySelector('.movielist');
-let data;
+var data;
 
 const displayData = (results) => {
   data = results;
