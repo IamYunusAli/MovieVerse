@@ -9,6 +9,7 @@ const fetchAPI = async () => {
   const commentBtns = document.querySelectorAll('.commentBtn');
   commentBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
+      //console.log(data);
       displayPopup(data, e.target.id);
     });
   });
