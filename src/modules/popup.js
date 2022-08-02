@@ -1,10 +1,10 @@
-const pop_cont = document.querySelector('.pop-cont');
+const popCont = document.querySelector('.pop-cont');
 
 const displayPopup = (data, id) => {
-  const index = data.findIndex(object => {
+  const index = data.findIndex((object) => {
     return object.id === parseInt(id);
   });
-  pop_cont.innerHTML = `
+  popCont.innerHTML = `
   <img class="padd imge" src="${data[index].medium_cover_image}" alt="">
   <div class="article padd">
   <button type="button" class="close">X</button>
@@ -23,10 +23,10 @@ const displayPopup = (data, id) => {
   </div>
   </div>
   `;
-  pop_cont.classList.remove('hide');
+  popCont.classList.remove('hide');
   const close = document.querySelector('.close');
   close.addEventListener('click', () => {
-    pop_cont.classList.add('hide');
+    popCont.classList.add('hide');
   });
 };
 
