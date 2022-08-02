@@ -10,14 +10,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Exercise',
       template: './src/index.html',
     }),
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
   module: {
     rules: [
@@ -27,7 +25,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset',
+        use: {
+          loader: 'url-loader',
+        },
       },
     ],
   },

@@ -1,3 +1,55 @@
 body {
-  margin: 5px;
+  margin: 0;
+  background-color: rgb(14, 48, 24);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "poppins", sans-serif;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  box-shadow: 0 2px 0 0 rgb(8, 29, 14);
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+}
+
+.headers {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.movielist {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  margin: 10%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
 }
