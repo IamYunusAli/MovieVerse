@@ -1,5 +1,5 @@
 const listContainer = document.querySelector('.movielist');
-const [] = data;
+const { data } = [];
 
 const displayData = (results) => {
   data.push(results);
