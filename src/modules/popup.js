@@ -1,7 +1,7 @@
 const popCont = document.querySelector('.pop-cont');
 
 const displayPopup = (data, id) => {
-  let arr = data[0];
+  const arr = data[0];
   const index = arr.findIndex((object) => object.id === parseInt(id, 10));
   popCont.innerHTML = `
   <img class="padd imge" src="${arr[index].medium_cover_image}" alt="">
