@@ -39,11 +39,40 @@ header {
 
 .movielist {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   row-gap: 10px;
+  column-gap: 20px;
   margin: 10%;
+}
+
+.movieitem {
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LikeBtn {
+  height: 60px;
+  color: #fff;
+  background-color: #000;
+}
+
+.commentBtn {
+  width: 100%;
+  background-color: #fff;
+  height: 40px;
 }
 
 footer {
@@ -55,8 +84,4 @@ footer {
 
 li {
   list-style: none;
-}
-
-p {
-  margin: 0;
 }
