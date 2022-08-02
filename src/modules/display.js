@@ -2,7 +2,7 @@ const listContainer = document.querySelector('.movielist');
 const { data } = [];
 
 const displayData = (results) => {
-  data.push(results);
+  data = data.push(results);
   results.forEach((result) => {
     listContainer.innerHTML += `
     <li class="movieitem">
