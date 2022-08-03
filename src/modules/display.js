@@ -12,7 +12,7 @@ const displayData = (results) => {
         <h4>${result.title}</h4>
             <button class="LikeBtn" id="${result.id}">
                 <i id="${result.id}" class="bi bi-heart"></i>
-                <p>Likes</p>
+                <p class="likes">0</p>
                 </button>
 
         </div>
