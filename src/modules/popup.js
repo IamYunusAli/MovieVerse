@@ -58,4 +58,4 @@ const displayPopup = async (data, id) => {
   displayCom(get(id));
 };
 
-export default displayPopup;
+export { displayPopup, length};
