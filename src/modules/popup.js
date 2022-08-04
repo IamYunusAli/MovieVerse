@@ -1,4 +1,5 @@
 import { add, get } from './addGetComm.js';
+
 const popCont = document.querySelector('.pop-cont');
 
 const displayCom = async (list) => {
@@ -6,7 +7,7 @@ const displayCom = async (list) => {
   commentList.innerHTML = '';
   const arr = await list;
   arr.forEach((item) => {
-    commentList.innerHTML += `<li>${item.username} ${item.comment} ${item.creation_date}</li>`;
+    commentList.innerHTML += `<li>${item.username}: ${item.comment} - ${item.creation_date}</li>`;
   });
 };
 
@@ -46,7 +47,7 @@ const displayPopup = async (data, id) => {
   const commBtn = document.querySelector('.commBtn');
 
   commBtn.addEventListener('click', async () => {
-    if (name.value !== '' && commArea.value !== ''){
+    if (name.value !== '' && commArea.value !== '') {
       await add(id, name.value, commArea.value);
       displayCom(get(id));
       document.querySelector('.comm-length').textContent = `Comments(${await length(get(id))})`;
