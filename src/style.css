@@ -1,0 +1,180 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+}
+
+.logo > img {
+  font-size: 30px;
+  height: 60px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+  width: 95%;
+  box-shadow: 0 2px 0 0 rgb(255, 255, 255);
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+}
+
+.headers {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.movielist {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  margin: 10%;
+}
+
+.movieitem {
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LikeBtn {
+  height: 60px;
+  color: #fff;
+  background-color: #000;
+}
+
+.commentBtn {
+  width: 100%;
+  background-color: #fff;
+  height: 40px;
+}
+
+.commentBtn:hover {
+  background-color: #000;
+  color: white;
+  border: 2px solid #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-size: 12px;
+}
+
+.pop-cont {
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.95;
+}
+
+.imge {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.summary {
+  font-size: 12px;
+}
+
+.padd {
+  padding: 10px 10px 10px 10px;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.close {
+  display: flex;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.close:hover {
+  color: #000;
+  background-color: white;
+}
+
+.name {
+  width: 350px;
+}
+
+.comment-area {
+  width: 350px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+}
