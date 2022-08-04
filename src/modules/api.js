@@ -1,5 +1,5 @@
 import displayData, { data } from './display.js';
-import displayPopup from './popup.js';
+import { displayPopup, } from './popup.js';
 import postLikes from './postlikes.js';
 import getLikes from './getlikes.js';
 

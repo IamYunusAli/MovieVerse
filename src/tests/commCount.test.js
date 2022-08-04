@@ -1,7 +1,7 @@
 /** @jest-environment jsdom */
-import displayData,{ data } from '../modules/display.js';
+import displayData, { data } from '../modules/display.js';
 import get from '../modules/addGetComm.js';
-import length from '../modules/popup.js';
+import { displayPopup, length } from '../modules/popup.js';
 import fetchAPI from '../modules/api.js';
 
 const id = 8333;
