@@ -1,5 +1,5 @@
 const postLikes = async (movieId) => {
-  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/AteFeVtswifKjbiMpX22/likes', {
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/j6HeZU4qgzBNhrLzuH6I/likes', {
     method: 'POST',
     body: JSON.stringify({
       item_id: movieId,
