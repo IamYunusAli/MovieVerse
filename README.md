@@ -10,6 +10,10 @@
 - VSCODE and webpack
 - Yts Movie API
 
+## Image Demo!
+![movie verse](https://user-images.githubusercontent.com/32224137/182887131-d663aa1b-51f9-4b94-96c3-1c56758be43c.png)
+![movie verse com](https://user-images.githubusercontent.com/32224137/182887180-2ef0f01b-4a8a-426c-96f9-43bd63f4a78a.png)
+
 ## Live Demo! [Live demo](https://iamyunusali.github.io/MovieVerse/)
 
 ## Getting Started
