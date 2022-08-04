@@ -1,21 +1,21 @@
-const popCont = document.querySelector('.pop-cont');
 import { add, get } from './addGetComm.js';
+const popCont = document.querySelector('.pop-cont');
 
-const displayCom = async(list) => {
+const displayCom = async (list) => {
   const commentList = document.querySelector('.comment-list');
   commentList.innerHTML = '';
   const arr = await list;
-    arr.forEach(item => {
-      commentList.innerHTML += `<li>${item.username} ${item.comment} ${item.creation_date}</li>`;
-    });
+  arr.forEach((item) => {
+    commentList.innerHTML += `<li>${item.username} ${item.comment} ${item.creation_date}</li>`;
+  });
 };
 
-const length = async(list) => {
+const length = async (list) => {
   const arr = await list;
   return arr.length;
 };
 
-const displayPopup = async(data, id) => {
+const displayPopup = async (data, id) => {
   const arr = data[0];
   const index = arr.findIndex((object) => object.id === parseInt(id, 10));
   popCont.innerHTML = `
@@ -45,13 +45,13 @@ const displayPopup = async(data, id) => {
   const commArea = document.querySelector('.comment-area');
   const commBtn = document.querySelector('.commBtn');
 
-  commBtn.addEventListener('click', async(e) => {
-    if(name.value !== '' && commArea.value !== ''){
-     await add(id, name.value, commArea.value);
-     displayCom(get(id));
-     document.querySelector('.comm-length').textContent = `Comments(${await length(get(id))})`;
-     commArea.value = '';
-     name.value = '';
+  commBtn.addEventListener('click', async () => {
+    if (name.value !== '' && commArea.value !== ''){
+      await add(id, name.value, commArea.value);
+      displayCom(get(id));
+      document.querySelector('.comm-length').textContent = `Comments(${await length(get(id))})`;
+      commArea.value = '';
+      name.value = '';
     }
   });
   displayCom(get(id));
