@@ -91,6 +91,7 @@ footer {
 
 li {
   list-style: none;
+  font-size: 12px;
 }
 
 .pop-cont {
@@ -120,7 +121,7 @@ li {
 }
 
 .summary {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .padd {
@@ -136,7 +137,8 @@ li {
 
 h1,
 h2,
-h3 {
+h3,
+li {
   margin: 0;
   padding: 0;
 }
@@ -170,4 +172,9 @@ h3 {
 
 button {
   cursor: pointer;
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
 }
