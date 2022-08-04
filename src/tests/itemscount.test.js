@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 import fetchAPI from '../modules/api.js';
-import displayData from '../modules/display.js'
+import displayData from '../modules/display.js';
 
 describe('Add tests for items counter', () => {
   test('check counter equals movielist', () => {
